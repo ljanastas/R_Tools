@@ -1,3 +1,5 @@
+# Some code to get various useful pieces of information from IP addresses.
+
 iplocation <- function(ip=""){
   response    <- readLines(paste("http://www.datasciencetoolkit.org/ip2coordinates/",ip,sep=""))
   success     <- !any(grepl("null",response))
